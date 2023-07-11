@@ -704,11 +704,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43834fa916a5c419b987e4fa7c2759a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockButton: {fileID: 0}
-  scissorsButton: {fileID: 0}
-  paperButton: {fileID: 0}
-  opponentHand: {fileID: 0}
-  resultText: {fileID: 0}
+  rockButton: {fileID: 2055702464}
+  scissorsButton: {fileID: 161083278}
+  paperButton: {fileID: 702804826}
+  opponentHand: {fileID: 544912996}
+  resultText: {fileID: 1446641169}
 --- !u!1 &702804824
 GameObject:
   m_ObjectHideFlags: 0
