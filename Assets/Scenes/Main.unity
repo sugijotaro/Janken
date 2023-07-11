@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 553540783}
   - component: {fileID: 553540782}
   - component: {fileID: 553540785}
+  - component: {fileID: 553540786}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -312,3 +313,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc2fbc19c8e934774b8e2dc965e9ff4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &553540786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553540781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43834fa916a5c419b987e4fa7c2759a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockButton: {fileID: 0}
+  scissorsButton: {fileID: 0}
+  paperButton: {fileID: 0}
+  opponentHand: {fileID: 0}
+  resultText: {fileID: 0}
