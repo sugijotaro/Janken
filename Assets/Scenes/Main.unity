@@ -709,6 +709,9 @@ MonoBehaviour:
   paperButton: {fileID: 702804826}
   opponentHand: {fileID: 544912996}
   resultText: {fileID: 1446641169}
+  rockSprite: {fileID: 21300000, guid: 4a970e78527114a88b59f124db8a5dd6, type: 3}
+  scissorsSprite: {fileID: 21300000, guid: b1210c9af08564af8946c3e75c6f9fa5, type: 3}
+  paperSprite: {fileID: 21300000, guid: 80c1f9947c89242a4addff6ff8c8da78, type: 3}
 --- !u!1 &702804824
 GameObject:
   m_ObjectHideFlags: 0

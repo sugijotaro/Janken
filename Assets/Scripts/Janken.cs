@@ -19,18 +19,21 @@ public class Janken : MonoBehaviour
     public Image opponentHand;
     public Text resultText;
 
-    private Dictionary<Hand, string> handToString = new Dictionary<Hand, string>
-    {
-        { Hand.Rock, "rock" },
-        { Hand.Scissors, "scissors" },
-        { Hand.Paper, "paper" }
-    };
+    public Sprite rockSprite;
+    public Sprite scissorsSprite;
+    public Sprite paperSprite;
+
+    private Dictionary<Hand, Sprite> handToSprite = new Dictionary<Hand, Sprite>();
 
     private void Start()
     {
         rockButton.onClick.AddListener(OnRockClick);
         scissorsButton.onClick.AddListener(OnScissorsClick);
         paperButton.onClick.AddListener(OnPaperClick);
+
+        handToSprite.Add(Hand.Rock, rockSprite);
+        handToSprite.Add(Hand.Scissors, scissorsSprite);
+        handToSprite.Add(Hand.Paper, paperSprite);
     }
 
     private void OnRockClick()
@@ -57,7 +60,7 @@ public class Janken : MonoBehaviour
 
     private void ShowOpponentHand(Hand hand)
     {
-        opponentHand.sprite = Resources.Load<Sprite>(handToString[hand]);
+        opponentHand.sprite = handToSprite[hand];
     }
 
     private void ShowResult(Hand playerHand, Hand opponentHand)
